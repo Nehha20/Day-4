@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void Pattern(int r, int c){
+  for(int i=0; i<=r; i++){
+    for(int j=0; j<=c; j++){
+      printf("%c", 'A'+j);
+    }
+    printf("\n");
+  }
+  
+}
+int main(){
+  int val1, val2;
+  printf("Enter the rows & cols : ");
+  scanf("%d %d", &val1, &val2);
+  Pattern(val1, val2);
+  return 0;
+}
